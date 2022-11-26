@@ -1,0 +1,305 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Adam;
+  src: url(../src/assets/fonts/Adam.ttf);
+}
+@font-face {
+  font-family: Avancement;
+  src: url(../src/assets/fonts/Avancement.ttf);
+}
+
+@layer components {
+    * h1 {
+      font-family: Adam;
+    }
+    * h2 {
+      font-family: Adam;
+    }
+    * p {
+      font-family: Avancement;
+    }
+    * button {
+      font-family: Adam;
+    }
+    * li {
+      font-family: Adam;
+    }
+    .navBarButton {
+        z-index: 1;
+        position: relative;
+        font-size: inherit;
+        font-family: inherit;
+        color: #398492;
+        padding: 0.75em 1em;
+        outline: none;
+        border: none;
+        overflow: hidden;
+        border: 2px solid #398492 !important;
+        background-color: white;
+        transition: color 0.4s ease-in-out;
+        font-size: larger;
+        border-radius: 4px;
+        }
+
+        .navBarButton::before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        background-color: #398492 !important;
+        transform-origin: center ;
+        transform: translate3d(-55%, -55%, 0) scale3d(0, 0, 0) !important;
+        transition: transform 0.6s ease-in-out;
+        }
+
+        .navBarButton:hover {
+        cursor: pointer;
+        color: white;
+        background-color: none !important;
+        background: none !important;
+        
+        }
+
+        .navBarButton:hover::before {
+        transform: translate3d(-55%, -55%, 0) scale3d(20, 20, 20) !important;
+        }
+        .video-banner{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            border: none;
+
+        }
+        .video-banner video{
+            position:relative;
+            top:0;
+            left:0;
+            object-fit: cover;
+            width: 100%;
+            height:100%;
+
+        }
+        .video-mobile{
+            display: none;
+            position:relative;
+            top:0;
+            left:0;
+            object-fit: cover;
+            width: 100%;
+            height:100%;
+            border:none
+        }
+        @media screen and (max-width:768px){
+            .video-laptop{
+                display: none;
+            }
+            .video-mobile{
+                display: block;
+            }
+        }
+        .BookYourCall{	background-color: white ! important;border: 3px solid #398492;color: #398492 ! important;background: linear-gradient(to right, #398492 50%, white 50%) ! important;
+            background-size: 200% 100% ! important;
+            background-position: right bottom ! important;transition: all .6s ease-out ! important;padding: 24px 16px ! important;border-radius: 4px !important;line-height: 16px !important;
+            box-sizing: content-box;cursor: pointer ! important;
+            text-decoration: none !important;font-size: 150.5% !important;}
+        .BookYourCall:hover{ background-position: left bottom ! important;color:white ! important;border: 3px solid white;}
+        .flex-wrapper {
+            display: flex;
+            flex-flow: row nowrap;
+          }
+          
+          .single-chart {
+            width: 100%;
+            justify-content: space-around ;
+          }
+          
+          .circular-chart {
+            display: block;
+            margin: 10px auto;
+            max-width: 80%;
+            max-height: 250px;
+          }
+          
+          .circle-bg {
+            fill: none;
+            stroke: #eee;
+            stroke-width: 3.8;
+          }
+          
+          .circle {
+            fill: none;
+            stroke-width: 2.8;
+            stroke-linecap: round;
+            animation: progress 1s ease-out forwards;
+          }
+          
+          @keyframes progress {
+            0% {
+              stroke-dasharray: 0 100;
+            }
+          }
+          
+          .circular-chart.blue .circle {
+            stroke: #a8cdd1;
+          }
+          
+          .percentage {
+            fill: #666;
+            font-family: sans-serif;
+            font-size: 0.5em;
+            text-anchor: middle;
+          }
+          .comp{width:16vw;object-fit: cover;}
+          #jpmorg-slide{width: 50vw;}
+          #jpmorg{width:50vw}
+                  @keyframes scroll 
+           {
+              from{transform: translateX(40vw);}
+              to{transform: translateX(calc(-30vw * 25));}
+              /*If you added a company,  u have to change the to{transform:translateX(calc(-32vw * 28));} to  to{transform:translateX(calc(-32vw * 29));}  */
+              
+          }
+          .slide{width:16vw; height:max-content;display: flex;   align-items: center;margin-right:15vw;height:15vw}
+          .slide-track{display: flex;  width: calc(30vw *25 ) ! important;animation:scroll linear 35s infinite ! important; height: max-content;justify-content: center;align-items: center;}
+          .companies-container{ overflow: hidden; display: grid; position: relative; place-items: center;margin-bottom:5%; width: 100%; height: max-content;}
+         /* If you added a company,  u have to change the width of slide-track( width:calc(30vw *28)--> width:calc(30vw*29)) */
+  
+  
+          @media (max-width:600px ){
+   
+              body{background-color:white}
+              .comp{width:30vw;object-fit: cover;}
+              #jpmorg-slide{width: 60vw;}
+              #jpmorg{width:60vw;}
+              .slide{width:30vw; height:max-content;display: flex;   align-items: center;margin-right:20vw;height:25vw}
+              .slide-track{display: flex;  width: calc(50vw *25 ) ! important;animation:scroll linear 50s infinite ! important; height: max-content;}
+              .companies-container{ overflow: hidden; display: grid; position: relative; place-items: center;margin-bottom:5%; width: 100%; height: max-content;}
+              .h1_{text-align:center; color:#cfb050; font-weight:700! important; font-size:32px ! important;margin:5% 0 2% 0 }
+              /* If you added a company,  u have to change the width of slide-track( width:calc(50vw *28)--> width:calc(50vw*29)) */
+              @keyframes scroll 
+              {
+                  from{transform: translateX(40vw);}
+                  to{transform: translateX(calc(-50vw * 25));}
+                  /*If you added a company,  u have to change the to{transform:translateX(calc(-50vw * 28));} to  to{transform:translateX(calc(-50vw * 29));}  */
+                  
+              }
+          }
+          .navBar {
+            position: relative;
+          }
+          
+          .navBar button {
+            position: fixed;
+            left: 40px;
+            top: 40px;
+            z-index: 10;
+            cursor: pointer;
+          }
+          
+          .menuNav {
+            overflow-y: scroll;
+            list-style: none;
+            position: fixed;
+            top: 0;
+            background: white;
+            left: 0;
+            bottom: 0;
+            height: 100vh;
+            width: 0;
+            overflow: hidden;
+            max-width: 290px;
+            z-index: 9;
+          }
+          
+          .menuNav.showMenu {
+            width: 100%;
+          }
+          
+          .menuNav li:first-child {
+            margin-top: 7rem;
+          }
+          .kv-main section a{text-decoration:none !important}
+          .CoachingButton{color: #398492 ! important;width:86% ! important;margin: 1% 0% 1% 0 ! important ; text-align: center;border:2px solid #398492;padding: 20px !important;border-radius: 4px !important;line-height: 16px !important;box-sizing: content-box;cursor: pointer ! important;text-decoration: none !important;font-size: 120.8% !important;background-color: #FFF ;display: inline-block; height: 30px ! important; background: linear-gradient(to right, #398492 50%, white 50%) ! important;background-size: 200% 100% ! important;background-position: right bottom ! important;transition: all .6s ease-out ! important;}
+          .CoachingButton:hover{ 	 background-position: left bottom ! important; color:#FFF ! important}
+          @media (min-width:992px){
+              .CoachingButton{margin: 4% 0% 1% 0 ! important ;}
+              #one{margin-left: 3vw ! important;}
+              #two{margin-right: 3vw ! important;}
+          }
+          .Waitlist{	background-color: white ! important;border: 3px solid #398492;color: #398492 ! important;background: linear-gradient(to right, #398492 50%, white 50%) ! important;background-size: 200% 100% ! important;background-position: right bottom ! important;transition: all .6s ease-out ! important;padding: 22px 16px ! important;border-radius: 4px !important;line-height: 16px !important;box-sizing: content-box;cursor: pointer ! important;text-decoration: none !important;font-size: 140.5% !important;}
+					.Waitlist:hover{ background-position: left bottom ! important;color:white ! important;border: 3px solid white;}
+          .programButton{	background-color: white ! important;border: 3px solid #398492;
+            color: #398492 ! important;background: linear-gradient(to right, #398492 50%, white 50%) ! important;background-size: 200% 100% ! important;
+            background-position: right bottom ! important;transition: all .6s ease-out ! important;padding: 24px 16px ! important;
+            border-radius: 4px !important;line-height: 16px !important;box-sizing: content-box;cursor: pointer ! important;
+            text-decoration: none !important;font-size: 150.5% !important;}
+          .programButton:hover{ background-position: left bottom ! important;color:white ! important;border: 3px solid white;}
+          .embedresize {
+            max-width: 1200px;
+            margin: auto;
+            }
+          
+          .embedresize div {
+          position: relative;
+          height: 0;
+          padding-bottom: 56.25%;
+          }
+          
+          .embedresize iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          }
+
+          .accordionContent {
+            max-height: 0;
+            overflow: hidden;
+            white-space: pre-line;
+            transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+          }
+
+          .accordionContent.show {
+            height: auto;
+            max-height: 9999px;
+            white-space: pre-line;
+            transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+          }
+
+          .BookYourCallProgram{	background-color: white ! important;border:3pxs solid white ;color: #398492 ! important;background: linear-gradient(to right, #398492 50%, white 50%) ! important;background-size: 200% 100% ! important;background-position: right bottom ! important;transition: all .6s ease-out ! important;padding: 12px 16px ! important;border-radius: 4px !important;box-sizing: content-box;cursor: pointer ! important;text-decoration: none !important;font-size: 142.5% !important;overflow-wrap: break-word;height: max-content;line-height: 40px;}
+          .BookYourCallProgram:hover{ background-position: left bottom ! important;color:white ! important;}
+
+          #first-main-chart{
+              color:white ;
+          }
+          #first-main-chart:hover{
+              color:#50929f ! important;
+          }
+          #bonus-section{background-image: url("https://cdg.ndr.mybluehost.me/wp-content/uploads/2022/09/grey-geo-1-.jpg") ! important; background-color:rgba(45, 45, 45, 0);background-attachment: fixed !important;background-repeat: repeat repeat !important;background-position: center center;background-size: cover !important}
+          
+          @keyframes loading {
+            0% {
+              -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+            }
+            100% {
+              -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+            }
+          }
+          
+          @media only screen and (max-width: 600px) {
+            .stripeform {
+              width: 80vw;
+              min-width: initial;
+            }
+          }
+}
