@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProgramFeatures() {
   return (
-    <div class="flex flex-col justify-center items-center mt-[7vh]" >
+    <div class="flex flex-col justify-center items-center mt-[15vh]" >
         <h1 className='text-4xl text-center items-center justify-center flex py-16 text-[#398492]'>
             PROGRAM FEATURES
         </h1>

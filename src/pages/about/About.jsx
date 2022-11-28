@@ -8,7 +8,7 @@ import VideoEmbed from '../../components/VideoEmbed'
 
 function About() {
   return (
-    <div className='mt-[12vh] space-y-4'>
+    <div className='mt-[15vh] space-y-4'>
         <div className='flex justify-center items-center embedresize'>
             <VideoEmbed link='https://www.youtube.com/embed/ZVNNPMPZltY' title='Chris M. Career Coaching Review' />
         </div>

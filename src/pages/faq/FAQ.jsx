@@ -3,7 +3,7 @@ import Accordion from '../../components/Accordion'
 
 function FAQ() {
   return (
-    <div className='mt-[7vh]'>
+    <div className='mt-[15vh]'>
         <h1 className='text-4xl text-center items-center justify-center py-16 flex text-[#398492]'>
           Frequently Asked Questions
         </h1>

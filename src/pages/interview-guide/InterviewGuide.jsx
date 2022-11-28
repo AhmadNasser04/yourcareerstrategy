@@ -23,7 +23,7 @@ function InterviewGuide() {
   })
 
   return (
-    <div className='mt-[7vh] scroll-smooth'>
+    <div className='mt-[15vh] scroll-smooth'>
       <div className='pt-[3vh] md:pt-[10vh] px-[10%] md:pl-[25%] flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-5'>
         {/* CHAPTER NAVIGATION */}
         <div className='flex flex-col space-y-10 md:w-[25%]'>

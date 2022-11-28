@@ -10,7 +10,7 @@ function Payment() {
     }
 
     return (
-        <div className='mt-[7vh]'>
+        <div className='mt-[15vh]'>
             <div className='md:grid md:grid-cols-2 gap-5 flex flex-col py-16 px-[5%] md:px-[15%]'>
                 <div className='space-y-8'>
                     {/* First Section */}

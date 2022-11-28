@@ -5,7 +5,7 @@ import VideoEmbed from '../../components/VideoEmbed'
 
 function Workshop() {
   return (
-    <div className='mt-[7vh]'>
+    <div className='mt-[15vh]'>
         <h1 className='text-4xl text-center items-center justify-center flex py-16 text-[#398492]'>
             Workshops
         </h1>

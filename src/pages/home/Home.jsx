@@ -12,7 +12,7 @@ import Testimonial from './Testimonial'
 
 function Home() {
   return (
-    <div className='space-y-32 mt-[7vh]'>
+    <div className='space-y-32 mt-[10vh]'>
 
       {/* MAIN VIDEO */}
       <div className='hidden md:block'>

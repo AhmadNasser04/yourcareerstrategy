@@ -3,7 +3,7 @@ import Accordion from '../../components/Accordion'
 
 function TOS() {
   return (
-    <div className='mt-[7vh]'>
+    <div className='mt-[15vh]'>
         <h1 className='text-4xl text-center items-center justify-center pt-16 pb-5 flex text-[#398492]'>
             Terms and Conditions
         </h1>

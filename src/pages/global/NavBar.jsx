@@ -20,7 +20,7 @@ function NavBar() {
   return (
     <header className='bg-white flex justify-evenly items-center w-screen h-auto shadow-md shadow-slate-300 space-x-36 z-10 fixed top-0'>
         {/* LOGO */}
-        <div>
+        <div className='ml-[10%]'>
             <Link to='/'><img className='w-auto max-w-[144px]' src={logo} alt='logo' /></Link>
         </div>
 
